@@ -1,0 +1,217 @@
+$main-color: #45F;
+$gestauto-blue: #2D7AAD;
+$background: #252B2E;
+$nav-color: #b2b2b2;
+$nav-padding: 20px;
+$nav-bg: #fff;
+$nav-height: 60px;
+$footer-height: 60px;
+
+$body-font: "verblight";
+$HeadlinePos: 100px;
+$HeadlineMargin: 15%;
+
+
+.mainContent {
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	z-index: 0;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	height: $nav-height;
+}
+
+nav {
+	position: absolute;
+	width: 100vw;
+	height: inherit;
+	font-family: 'verblight', sans-serif;
+	text-align: center;
+	font-size: 1.2rem;
+	vertical-align: text-bottom;
+	color: $nav-color;
+	text-transform: uppercase;
+	z-index: 20;
+	color: white;
+	.headerLogo {
+	height: inherit;
+	float: left;
+	display: inline-block;
+	z-index: 9;
+	color: $nav-color;
+	font-family: 'orev-bolditalic', sans-serif;
+	font-size: 3rem;
+	vertical-align: center;
+	text-transform: uppercase;
+	cursor: default;
+	padding: 10px 0 0 2%; 
+	transition: 1s;
+		img {
+			float: left;
+			height: inherit;
+		}
+		p {
+			float: left;
+			color: $nav-color;
+			font-family: 'orev-bolditalic', sans-serif;
+			font-size: 3rem;
+			text-transform: uppercase;
+			cursor: default;
+			padding: 10px 0 0 2%; 
+			transition: 1s;
+		}
+	}
+	.headerLogo:hover {
+		color: $gestauto-blue;
+	}
+	.navlist {
+		float: right;
+		padding: $nav-padding 2% 0 0; 
+	}
+	.navlist li {
+		color: $nav-color;
+		display: inline;
+		padding-right: 2%;
+		list-style: none;
+		a {
+			border-bottom: 3px solid transparent;
+			transition: 1s;
+			}
+		a:visited, a:link {
+				text-decoration: none;
+				color: inherit;
+			}
+		a:hover {
+				border-bottom: 3px solid $gestauto-blue;
+			}
+	}
+
+}
+
+.navBG {
+	width: inherit;
+	height: $nav-height;
+	position: absolute;
+	background-color: $nav-bg;
+	opacity: 0.7;
+	z-index: 10;
+}
+
+hr {
+	margin: 10px 0;
+}
+
+.hero {
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	img {
+		position: absolute;
+		right: 0;
+		width: 75vw;
+		z-index: 10;
+	}
+	
+	h1 {
+		position: absolute;
+		top: $HeadlinePos;
+		left: $HeadlineMargin;
+		font-family: "verbextrabold_italic", sans-serif;
+		color: white;
+		font-size: 6em;
+		line-height: 1.1em;
+		padding: 0 20px;
+		margin-bottom: 2px;
+		background-color: $background;
+		z-index: 20;
+	}
+	h1:nth-of-type(2) {
+		top: $HeadlinePos*2.2;
+	}
+	.clearfix {
+		clear: both;
+	}
+}
+
+.byline {
+	width: 50%;
+	height: 50px;
+	margin: 20px auto;
+	padding: 20px 0;
+	img {
+		width: 10%;
+		float: left;
+	}
+	h2 {
+		float: left;
+		color: #000;
+		font-family: "verbsemibold", sans-serif;
+		color: $nav-color;
+		font-size: 1.6em;
+	}
+}
+
+.article {
+	clear: both;
+	width: 50%;
+	margin-left: 25%;
+	h1 {
+	font-family: "verbextrabold", sans-serif;
+	color: #333333;
+	font-size: 4em;
+	line-height: 1em;
+	margin-bottom: 2px;
+	margin-top: 1.2em;
+	}
+
+	h2 {
+		font-family: "verbsemibold", sans-serif;
+		color: $nav-color;
+		font-size: 1.6em;
+		margin-top: 0px;
+	}
+
+	p {
+		font-family: $body-font, sans-serif;
+		font-size: 1.2em;
+		line-height: 1.4em;
+		margin: 2rem 0;
+	}
+}
+
+.footer {
+	font-family: "verblight", sans-serif;
+	color: #333333;
+	width: 50%;
+	margin-left: 25%;
+	height: $footer-height;
+	padding: 0 0 20px;
+	.footlogo {
+		float: left;
+		margin-right: 10px;
+		height: inherit;
+		img {
+			height: inherit;
+		}
+	}
+	.footnav {
+		float: left;
+		height: inherit;
+		ul {
+			margin-left: 2%;
+			list-style: none;
+			li {
+				color: #333333;
+				transition: 0.5s;
+			}
+			li:hover {
+				color: $gestauto-blue;
+			}
+		}
+	}
+}
