@@ -111,8 +111,8 @@ hr {
 	overflow: auto;
 	width: 100%;
 	img {
-		position: absolute;
-		right: 0;
+		display: block;
+		margin-left: 25%;
 		width: 75vw;
 		z-index: 10;
 	}
